@@ -236,6 +236,7 @@ minimizeBtn.style.display = "none";
 fullScreenBtn.style.display = "block";
 }
 
-window.addEventListener('beforeunload', function(event) {
+window.addEventListener('unload', function(event) {
     localStorage.clear(); 
 });
+
