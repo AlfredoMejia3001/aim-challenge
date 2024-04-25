@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="screen">
+        <h1>Bienvenido al Aim Challenge</h1>
+            <button class="btn" id="start">Iniciar juego</button>
+    </div>
+    <div class="screen">
+        <h1>Escoge el tiempo</h1>
+        <ul class="list" id="time-list">
+            <li >
+                <button class="btn time-btn" data-time="10">10 sec</button>
+            </li>
+            <li >
+                <button class="btn time-btn" data-time="30">30 sec</button>
+            </li>
+            <li >
+                <button class="btn time-btn" data-time="60">1 min</button>
+            </li>
+            <li >
+                <button class="btn time-btn" data-time="120">2 min</button>
+            </li>
+            <li >
+                <button class="btn time-btn" data-unlimited="true">Infinito</button>
+            </li>
+
+
+        </ul>
+    </div>
+    <div class="screen">
+        <h1>Escoge la dificultad</h1>
+        <ul class="list" id="difficulty-list">
+            <li >
+                <button class="btn difficulty-btn" data-difficulty="1">Fácil</button>
+            </li>
+            <li >
+                <button class="btn difficulty-btn" data-difficulty="2">Intermedia</button>
+            </li>
+            <li >
+                <button class="btn difficulty-btn" data-difficulty="3">Difícil</button>
+            </li>
+        </ul>
+    </div>
+    <div class="screen">
+        <div class="stats">
+            <div class="info">
+                <p>Tiempo: <span id="time">00:00</span></p>
+                <p>Golpes: <span id="hits">0</span></p>
+                <p>Precisión: <span id="accuracy">100%</span></p>
+            </div>
+            <div class="lives">
+                <img src="heart.png"  class="heart">
+                <img src="heart.png"  class="heart">
+                <img src="heart.png"  class="heart">
+            </div>
+        </div>
+        <div class="board" id="board">
+        </div>
+        <div class="options">
+            <button class="btn restart">Reiniciar</button>
+            <button class="btn " id="fullscreen">Pantalla Completa</button>
+            <button class="btn " id="minimize">Minimizar</button>
+        </div>
+    </div>
+    <div class="screen">
+        <h1>Juego Terminado</h1>
+        <div class="results">
+            <p>Golpes: <span id="hits-over">0</span></p>
+            <p>Precision: <span id="accuracy-over">0%</span></p>
+        </div>
+        <button class="btn restart">Reiniciar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
