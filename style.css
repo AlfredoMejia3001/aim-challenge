@@ -23,6 +23,16 @@ h1 {
   font-size: 4rem;
   line-height: 2.4;
 }
+h5 {
+  font-size: 1rem;
+  line-height: 2.4;
+}
+
+.container {
+  text-align: justify;
+  padding-top: 30px;
+  max-width: 640px;
+}
 
 .btn {
   color: #faebd7;

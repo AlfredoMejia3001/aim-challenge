@@ -236,7 +236,11 @@ minimizeBtn.style.display = "none";
 fullScreenBtn.style.display = "block";
 }
 
-window.addEventListener('unload', function(event) {
-    localStorage.clear(); 
+window.addEventListener('DOMContentLoaded', function() {
+    if (!localStorage.getItem('pageLoaded')) {
+        localStorage.clear();
+         localStorage.setItem('pageLoaded', 'true');
+    }
 });
+
 
