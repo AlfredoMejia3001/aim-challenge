@@ -29,9 +29,8 @@ h5 {
   text-align: justify;
   padding-top: 30px;
   max-width: 640px;
-}
-
-.container {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn {
