@@ -236,3 +236,7 @@ minimizeBtn.style.display = "none";
 fullScreenBtn.style.display = "block";
 }
 
+window.addEventListener('beforeunload', function(event) {
+    // Guarda cualquier estado necesario en el almacenamiento local o las cookies
+    localStorage.clear(); // Limpiar el almacenamiento local para reiniciar todo
+});
